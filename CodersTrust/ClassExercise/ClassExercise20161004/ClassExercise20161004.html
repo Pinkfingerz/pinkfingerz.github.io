@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Class Exercise 04 Oct 2016</title>
+	<style type="text/css">
+	@import 'https://fonts.googleapis.com/css?family=Shadows+Into+Light+Two';
+		
+	div#container {
+    background: #ef8a33;
+    width: 100%;
+    margin: auto;
+	}
+
+	div#header {
+	    margin-left: 4px;
+	    margin-right: 4px;
+	    background: #523434;
+	    background-image: url(catbackground02.jpg);
+	    background-blend-mode: color-burn;
+	}
+
+	div#picture {
+	    display: inline-block;
+	}
+	
+	div#picture img {
+	    width: 230px;
+	    height: 210px;
+	    margin: 25px 35px;
+	    opacity: 0.5;
+	}
+
+	div#picture img:hover {
+	    opacity: 1.0;
+	}
+
+	div#logo {
+	    display: inline-block;
+	}
+
+
+	div#logo img {
+	    height: 170px;
+	    width: 500px;
+	    margin: 30px 30px 30px 100px;
+	}
+
+	.social {
+	    display: inline-block;
+	    vertical-align: top;
+	    margin-left: 57px;
+	    font-family: cursive;
+	    padding: 5px;
+	}
+
+	.social a {
+	    display: inline-block;
+	    text-decoration: none;
+	    background: #e90fec;
+	    padding: 20px 3px 11px 3px;
+	    margin: 7px;
+	    border-radius: 50px;
+	    color: black;
+	    width: 80px;
+	    height: 50px;
+	    text-align: center;
+	    float: left;
+	}
+
+	a:hover {
+		color: yellow;
+	}
+	div#left {
+    display: inline-block;
+    width: 29%;
+    height: 500px;
+    background: #352c2c;
+    margin-top: 10px;
+    margin-left: 4px;
+    vertical-align: top;
+    border: 5px solid white;
+    border-style: double;
+    box-sizing: border-box;
+    background-image: url(catbackground.png);
+    background-blend-mode: overlay
+	}
+
+	ul li {
+	    list-style: none;
+	    padding: 50px;
+	    font-size: 30px;
+	    font-family: cursive;
+	    text-align: center;
+	}
+	#left ul li a {
+	    text-decoration: none;
+	    color: #f70ae3;
+	    text-align: center;
+	    font-weight: bold;
+	}
+	#left ul li a:hover {
+	    color: yellow;
+	}
+	div#right {
+	    display: inline-block;
+	    width: 70%;
+	    height: 500px;
+	    background: blue;
+	    overflow: auto;
+	    margin-top: 10px;
+	    padding: 20px;
+	    border: 5px solid white;
+            box-sizing: border-box;
+	}
+	h1 {
+	    padding: 20px;
+	    text-align: center;
+	    font-family: 'Shadows Into Light Two', cursive;
+	    word-spacing: 25px;
+	    letter-spacing: 1px;
+
+	}
+	div#right p {
+	    font-family: 'Shadows Into Light Two', cursive;
+	    text-indent: 50px;
+	    letter-spacing: 1px;
+	    word-spacing: 10px;
+	}
+	
+	div#boxes {
+	     text-align: center;
+	     color: white;
+		}	
+		
+	div#box1 {
+	    background: #d62727;
+	    width: 250px;
+	    height: 150px;
+	    display: inline-block;
+	    margin: 20px;
+	    position: relative;
+	}
+	div#box1_a {
+	    position: absolute;
+	    top: -17px;
+	    right: -17px;
+	    width: 25px;
+	    background: yellow;
+	    height: 25px;
+	    border-radius: 50px;
+	    border: 2px white solid;
+	}
+	div#box1_b {
+	    position: absolute;
+	    background: yellow;
+	    bottom: -17px;
+	    left: -17px;
+	    width: 25px;
+	    height: 25px;
+	    border-radius: 50px;
+	    border: 2px white solid;
+	}
+	div#box2 {
+	    background: black;
+	    width: 250px;
+	    height: 150px;
+	    display: inline-block;
+	    margin: 20px;
+	    position: relative;
+	}
+	div#box2_a {
+	    position: absolute;
+	    background: yellow;
+	    top: -17px;
+	    right: -17px;
+	    width: 25px;
+	    height: 25px;
+	    border-radius: 50px;
+	    border: 2px white solid;
+	}
+	div#box2_b {
+	    position: absolute;
+	    background: yellow;
+	    bottom: -17px;
+	    left: -17px;
+	    width: 25px;
+	    height: 25px;
+	    border-radius: 50px;
+	    border: 2px white solid;
+	}
+	div#box3 {
+	    background: green;
+	    width: 250px;
+	    height: 150px;
+	    display: inline-block;
+	    margin: 20px;
+	    position: relative;
+	}
+	
+	div#box3_a {
+	    position: absolute;
+	    background: yellow;
+	    top: -17px;
+	    right: -17px;
+	    width: 25px;
+	    height: 25px;
+	    border-radius: 50px;
+	    border: 2px white solid;
+	}
+	div#box3_b {
+	    position: absolute;
+	    background: yellow;
+	    bottom: -17px;
+	    left: -17px;
+	    width: 25px;
+	    height: 25px;
+	    border-radius: 50px;
+	    border: 2px white solid;
+	}
+	div#box4 {
+	    background: turquoise;
+	    width: 250px;
+	    height: 150px;
+	    display: inline-block;
+	    margin: 20px;
+	    position: relative;
+	}
+	div#box4_a {
+	    position: absolute;
+	    background: yellow;
+	    top: -17px;
+	    right: -17px;
+	    width: 25px;
+	    height: 25px;
+	    border-radius: 50px;
+	    border: 2px white solid;
+	}
+	div#box4_b {
+	    position: absolute;
+	    background: yellow;
+	    bottom: -17px;
+	    left: -17px;
+	    width: 25px;
+	    height: 25px;
+	    border-radius: 50px;
+	    border: 2px white solid;
+	}
+	div#footer {
+	    background: brown;
+	    height: 50px;
+	    border-top: 5px black;
+	    text-align: center;
+	    font-size: 20px;
+	    border-style: dotted dotted solid dotted;
+	}
+	#footer a {
+	    text-decoration: none;
+	    color: black;
+	    font-weight: bold;
+	    font-family: cursive;
+	}
+	#footer a:hover {
+	    color: yellow;
+	}
+	</style>
+</head>
+
+<body>
+
+<div id="container">
+
+	<div id="header">
+		<div id="picture">
+			<img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSBcsgyUJoFC6yHB7QYgTW9zO9s5NxWqq9ms7tsFEGktnZ33cwR2A">
+		</div> <!--end of picture-->
+		<div id="logo"><img src="C:\Users\Y 480\Desktop\CODERSTRUST\Class Exercises\ClassExercise20161004\mylogo.gif">
+		</div> <!--end of logo-->
+		
+		<div class="social">
+			<a href="www.facebook.com">Be My FB Friend</a>
+			<a href="www.twitter.com">Tweet Me</a>
+			<a href="www.youtube.com">Watch My Youtube</a>
+		</div> <!--end of social-->
+	</div> <!--end of header-->
+
+	<div id="left">
+		<ul>
+			<li><a href="Menu 1">Menu 1</a></li>
+			<li><a href="Menu 2">Menu 2</a></li>
+			<li><a href="Menu 3">Menu 3</a></li>
+		</ul>
+	</div> <!--end of left-->
+
+	<div id="right">
+		<h1>Lorem Ipsum</h1>
+		<p>What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+		<p>Where does it come from? Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
+		<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
+	</div> <!--end of right-->
+	<div id="boxes">
+		<div id="box1">
+			<p>Text goes here..</p>
+			<div id="box1_a"></div>
+			<div id="box1_b"></div>
+		</div> <!--end of box1-->
+
+		<div id="box2">
+			<p>Text goes here..</p>
+			<div id="box2_a"></div>
+			<div id="box2_b"></div>
+		</div> <!--end of box2-->
+
+		<div id="box3">
+			<p>Text goes here..</p>
+			<div id="box3_a"></div>
+			<div id="box3_b"></div>
+		</div> <!--end of box3-->
+
+		<div id="box4">
+			<p>Text goes here..</p>
+			<div id="box4_a"></div>
+			<div id="box4_b"></div>
+		</div> <!--end of box4-->
+	</div> <!--end of boxes-->
+	<div id="footer">
+		<a href="mailto:email.gmail.com">Send Me An Email</a>
+	</div> <!--end of footer-->
+
+</div> <!--end of container-->
+
+</body>
+</html>
