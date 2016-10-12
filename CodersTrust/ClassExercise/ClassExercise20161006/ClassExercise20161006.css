@@ -368,6 +368,8 @@ body {background: #ef8a33;}
 
 	input[type="radio"] {margin-left: 15px;}
 
+	input[type="checkbox"] {margin: 5px;}
+
 	div#footer {
 	    background: brown;
 	    width: 100%;
