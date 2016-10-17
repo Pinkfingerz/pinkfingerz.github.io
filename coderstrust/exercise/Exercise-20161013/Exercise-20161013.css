@@ -1,0 +1,607 @@
+* {
+	margin: 0;
+	padding: 0;
+	}	
+
+
+	body {background: #ef8a33;}
+
+	div#container {
+    	background: #ef8a33;
+    	width: 1200px;
+    	margin: 0 auto;
+    }
+
+	div#header {
+	    margin-left: 4px;
+	    margin-right: 4px;
+	    background: #523434;
+	    background-image: url(catbackground02.jpg);
+	    background-size: contain;
+	    background-blend-mode: color-burn;
+	}
+
+	div#picture {display: inline-block;}
+
+	div#picture img {
+		width: 230px;
+		height: 210px;
+		margin: 25px 35px;
+		opacity: 0.5;
+	}
+
+	div#picture img:hover {opacity: 1.0;}
+
+	div#logo {
+		display: inline-block;
+	}
+
+	div#logo img {
+	    height: 170px;
+	    width: 500px;
+	    margin: 30px;
+	    animation: logo 5s infinite;
+	}
+
+	@keyframes logo {
+		0% {transform: rotate(0deg);
+		left: 0px;}
+		25% {transform: rotate(20deg);
+    	left: 0px;}
+    	50% {transform: rotate(0deg);
+    	left: 500px;}
+    	55% {transform: rotate(0deg);
+    	left: 500px;}
+    	70% {transform: rotate(0deg);
+    	left: 500px;}
+    	100% {transform: rotate(-360deg);
+    	left: 0px;}
+	}
+
+	.social {
+	    display: inline-block;
+	    vertical-align: top;
+	    font-family: cursive;
+	    padding: 5px;
+	}
+
+	@keyframes blink {
+		0% {background-color: red;}
+		25% {background-color: yellow;}
+		50% {background-color: green;}
+		75% {background-color: white;}
+		100% {background-color: blue;}
+	}
+
+	.social a {
+	    display: inline-block;
+	    text-decoration: none;
+	    background: #e90fec;
+	    padding: 20px 3px 11px 3px;
+	    margin: 7px;
+	    border-radius: 50px;
+	    color: black;
+	    width: 80px;
+	    height: 50px;
+	    text-align: center;
+	    vertical-align: top;
+	    animation-name: blink;
+	    animation-duration: 10s;
+	    animation-delay: 2s;
+	    animation-iteration-count: infinite;
+	}
+
+	a:hover {color: yellow;}
+
+	div#left {
+    	display: inline-block;
+    	width: 29%;
+   		height: 500px;
+    	background: #352c2c;
+    	margin-top: 10px;
+    	margin-left: 4px;
+    	vertical-align: top;
+    	border: 5px solid white;
+    	border-style: double;
+    	box-sizing: border-box;
+    	background-image: url(catbackground.png);
+    	background-size: cover;
+    	background-blend-mode: overlay;
+	}
+
+	ul li {
+	    list-style: none;
+	    padding: 50px;
+	    font-size: 30px;
+	    font-family: cursive;
+	    text-align: center;
+	}
+
+	#left ul li a {
+	    text-decoration: none;
+	    color: #f70ae3;
+	    text-align: center;
+	    font-weight: bold;
+	    background: rgb(42, 31, 27);
+	    padding: 10px;
+	    border-radius: 20px;
+	}
+
+	#left ul li a:hover {color: yellow;}
+
+	div#right {
+	    display: inline-block;
+	    width: 70%;
+	    height: 500px;
+	    background: blue;
+	    overflow: auto;
+	    margin-top: 10px;
+	    padding: 20px;
+	    border: 5px solid white;
+        box-sizing: border-box;
+	}
+	
+	h1 {
+	    padding: 5px 0px 40px 0px;
+	    text-align: center;
+	    font-family: 'Shadows Into Light Two', cursive;
+	    word-spacing: 25px;
+	    letter-spacing: 2px;
+	    color: white;
+	    text-shadow: 10px 10px 5px hotpink, 10px 10px 5px black;
+	}
+	
+	div#right p {
+	    font-family: 'Shadows Into Light Two', cursive;
+	    text-indent: 50px;
+	    letter-spacing: 2px;
+	    word-spacing: 10px;
+	    color: white;
+	    font-weight: bold;
+	}
+	
+	div#column {
+	    font-family: 'Alegreya Sans SC', sans-serif;
+	    column-count: 3;
+	    width: 100%;
+	    column-gap: 40px;
+	    column-rule: 3px dotted lightblue;
+	    border: 10px solid transparent;
+	    padding: 15px;
+	    border-image: url(borderimg.jpg) 54 round;
+	    background: #fbaf6e;
+	    box-sizing: border-box;
+	}
+
+	div#column > h2 {
+    	text-align: center;
+    	color: white;
+    	text-shadow: 4px 3px 5px purple, 4px 3px 5px blue;
+    	letter-spacing: 25px;
+    	word-spacing: 35px;
+    	padding: 8px 0px 20px 0px;
+    	column-span: all;
+	}
+
+	div#column > p {
+    	word-spacing: 5px;
+    	color: blueviolet;
+    	font-weight: bold;
+	}
+
+	div#boxes {
+	     text-align: center;
+	     color: black;
+	}	
+		
+	div#box1 {
+    width: 250px;
+    height: 150px;
+    display: inline-block;
+    margin: 20px;
+    position: relative;
+    vertical-align: bottom;
+    box-sizing: border-box;
+    padding: 8px;
+    transition: 2s;
+    background: url(kitty04.jpg) right bottom no-repeat, url(kitty09.jpg) center bottom no-repeat, url(kitty03.jpg) left bottom no-repeat, url(background01.jpg);
+    background-size: 65px 65px, 70px 63px, 65px 65px;
+    font-family: cursive;
+	}
+
+	div#box1:hover {
+	    transform: matrix(1, -0.3, 0, 1, 0, 0);
+	}
+
+	div#box1_a {
+	    position: absolute;
+	    top: -17px;
+	    right: -17px;
+	    width: 25px;
+	    background: yellow;
+	    height: 25px;
+	    border-radius: 50px;
+	    border: 2px white solid;
+	    transition: 2s;
+	}
+
+
+	div#box1_a:hover {
+	 	transform: translate(-250px, 0px);
+	 	background-image: url(smiley04.jpg);
+	    background-size: cover;
+	    width: 30px;
+	   	height: 30px;
+	}
+
+	div#box1_b {
+	    position: absolute;
+	    background: yellow;
+	    bottom: -17px;
+	    left: -17px;
+	    width: 25px;
+	    height: 25px;
+	    border-radius: 50px;
+	    border: 2px white solid;
+	    transition: 2s;
+	}
+
+	div#box1_b:hover {
+	    transform: translate(250px, 0px);
+	    background-image: url(smiley04.jpg);
+	    background-size: cover;
+	    width: 30px;
+	   	height: 30px;
+	}
+
+	div#box2 {
+	    width: 250px;
+	    height: 150px;
+	    display: inline-block;
+	    margin: 20px;
+	    position: relative;
+	    transition: 2s;
+	    background-image: url(kitty08.jpg);
+	    background-size: cover;
+	    vertical-align: bottom;
+	    transition-delay: 1s;
+	}
+
+	div#box2:hover {
+	    transform: rotate(360deg);
+	    background-image: url(kitty07.jpg);
+    	background-size: cover;
+	}
+
+	div#box2_a {
+	    position: absolute;
+	    background: yellow;
+	    top: -17px;
+	    right: -17px;
+	    width: 25px;
+	    height: 25px;
+	    border-radius: 50px;
+	    border: 2px white solid;
+	    transition: 2s;
+	}
+
+	div#box2_a:hover {
+		background-image: url(smiley03.png);
+	   	background-size: cover;
+	    width: 30px;
+	   	height: 30px;
+	   	transform: rotateZ(90deg);
+	}
+
+	div#box2_b {
+	    position: absolute;
+	    background: yellow;
+	    bottom: -17px;
+	    left: -17px;
+	    width: 25px;
+	    height: 25px;
+	    border-radius: 50px;
+	    border: 2px white solid;
+	    transition: 2s;
+	}
+
+	div#box2_b:hover {
+		background-image: url(smiley03.png);
+	    background-size: cover;
+	    width: 30px;
+	   	height: 30px;
+	   	transform: rotateY(150deg);
+	}
+
+	div#box3 {
+	    width: 250px;
+	    height: 150px;
+	    display: inline-block;
+	    margin: 20px;
+	    position: relative;
+	    vertical-align: bottom;
+	    background-image: url(kitty01.jpg);
+    	background-size: cover;
+    	transition: 2s;
+    	transition-delay: 1s;
+	}
+
+	div#box3:hover {
+	    
+	    background-image: url(kitty02.jpg);
+    	background-size: cover;
+    	transition-timing-function: ease-in;
+    	transform: skew(0deg, 180deg);
+    }
+
+	
+	
+	div#box3_a {
+	    position: absolute;
+	    background: yellow;
+	    top: -17px;
+	    right: -17px;
+	    width: 25px;
+	    height: 25px;
+	    border-radius: 50px;
+	    border: 2px white solid;
+	    transition: 2s;
+	}
+
+		div#box3_a:hover {
+		transform: rotate(360deg);
+		background-image: url(smiley02.png);
+	    background-size: cover;
+	    width: 30px;
+	   	height: 30px;
+	}
+
+	div#box3_b {
+	    position: absolute;
+	    background: yellow;
+	    bottom: -17px;
+	    left: -17px;
+	    width: 25px;
+	    height: 25px;
+	    border-radius: 50px;
+	    border: 2px white solid;
+	    transition: 2s;
+	}
+
+	div#box3_b:hover {
+		transform: rotate(-360deg);
+		background-image: url(smiley02.png);
+	    background-size: cover;
+	    width: 30px;
+	   	height: 30px;
+	}
+
+	div#box4 {
+	    width: 250px;
+	    height: 150px;
+	    display: inline-block;
+	    margin: 20px;
+	    position: relative;
+	    transition: 2s;
+	    vertical-align: bottom;
+	    background-image: url(kitty05.jpg);
+    	background-size: cover;
+    	transition-delay: 1s;
+	}
+
+	div#box4:hover {
+    	transform: scale(1.8, 1.8);
+    	width: 200px;
+    	height: 150px;
+    	border-radius: 100px;
+    	background-image: url(kitty06.jpg);
+    	background-size: cover;
+	}
+
+	div#box4_a {
+	    position: absolute;
+	    background: yellow;
+	    top: -17px;
+	    right: -17px;
+	    width: 25px;
+	    height: 25px;
+	    border-radius: 50px;
+	    border: 2px white solid;
+	    transition-property: width,height,transform,background;
+	    transition-duration: 1s,1s,1s,1s;
+	}
+
+	div#box4_a:hover {
+	    transform: skewX(30deg);
+	    background-image: url(smiley01.png);
+    	background-size: cover;
+    	width: 30px;
+   		height: 30px;
+	}
+
+	div#box4_b {
+	    position: absolute;
+	    background: yellow;
+	    bottom: -17px;
+	    left: -17px;
+	    width: 25px;
+	    height: 25px;
+	    border-radius: 50px;
+	    border: 2px white solid;
+	    transition-property: width,height,transform,background;
+	    transition-duration: 1s,1s,1s,1s;  
+	    
+	}
+
+	div#box4_b:hover {
+	    transform: skewY(30deg);
+	    background-image: url(smiley01.png);
+	    background-size: cover;
+	    width: 30px;
+	    height: 30px;
+	}
+
+	div#video {
+	    text-align: center;
+	    margin-top: 40px;
+	    border: 23px solid transparent;
+	    border-image: url(borderimg06.png) 17% round;
+	    padding: 25px;
+	    width: 100%;
+	    box-sizing: border-box;
+	    background: linear-gradient(pink, violet, purple);
+	}
+
+	div#video > h2 {
+	    color: black;
+	    text-shadow: 3px 3px 5px white, 4px 4px 6px yellow;
+	    word-spacing: 12px;
+	}
+
+	div#video > h3 {
+	    font-family: 'Shadows Into Light Two', cursive;
+	    word-spacing: 10px;
+	    letter-spacing: 2px;
+	}
+
+	div#form {
+	    box-sizing: border-box;
+	    width: 100%;
+	    height: 530px;
+	    background: rgba(128, 128, 128, 0.34);
+	    border-style: ridge;
+	    border: 5px black double;
+	    position: relative;
+	    margin: 55px 10px 20px 0px;
+	    font-family: Century Gothic;
+	}
+
+	div#feedback {
+	    margin: auto;
+	    width: 250px;
+	    height: 30px;
+	    background-color: fuchsia;
+	    position: absolute;
+	    left: 0;
+	    right: 0;
+	    top: -25px;
+	    text-align: center;
+	    color: black;
+	    font-weight: bold;
+	    font-size: 30px;
+	    padding: 10px 5px 20px 5px;
+	    border: 5px black double;
+	    box-shadow: 10px 10px 5px #4c4747;
+	}
+
+	legend {
+	    text-align: center;
+	    font-size: 25px;
+	    font-weight: bold;
+	    color: crimson;
+	    margin: 10px;
+	}
+
+	div#form1 {
+	    display: inline-block;
+	    width: 45%;
+	    height: 485px;
+	    background: yellow;
+	    border: 4px fuchsia dotted;
+	    box-sizing: border-box;
+	    vertical-align: top;
+	    margin: 20px;
+	    padding: 20px;
+	}
+
+	fieldset {
+	    box-sizing: border-box;
+	    height: 425px;
+	    border-style: solid none none;
+	    border-color: rgb(187, 52, 187);
+	    border-width: 4px;
+	}
+
+	div#form2 {
+	    display: inline-block;
+	    width: 45%;
+	    height: 485px;
+	    background: yellow;
+	    border: 4px fuchsia dotted;
+	    box-sizing: border-box;
+	    vertical-align: top;
+	    margin: 20px 20px 20px 50px;
+	    padding: 20px;
+	}
+	
+	input[type="text"] {
+	    width: 100%;
+	    padding: 6px;
+	}
+
+	input[type="number"] {
+	    width: 100%;
+	    padding: 6px;
+	}
+
+	textarea {
+	    width: 100%;
+	    height: 70px;
+	    padding: 6px;
+	    font-family: Century Gothic;
+	}
+
+	select {padding: 6px;}
+
+	input[type="submit"] {
+	    width: 60%;
+	    height: 36px;
+	    background: crimson;
+	    text-align: center;
+	    font-size: 20px;
+	    letter-spacing: 13px;
+	    color: white;
+	    font-weight: bold;
+	    padding: 10px 0px 30px 5px;
+	    margin-left: 85px;
+	    border-radius: 20px;
+	}
+
+	input[type="submit"]:hover {
+	    background: #82061c;
+	    color: yellow;
+	}
+
+	label {
+	    margin: 15px;
+        font-weight: bold;
+	}
+
+	input[type="radio"] {margin-left: 15px;}
+
+	input[type="checkbox"] {margin: 5px;}
+
+	div#footer {
+	    background: brown;
+	    width: 100%;
+	    height: 65px;
+	    border-top: 5px black;
+	    text-align: center;
+	    font-size: 20px;
+	    border-style: dotted double solid double;
+	}
+
+	#footer a {
+	    text-decoration: none;
+	    color: black;
+	    font-weight: bold;
+	    font-family: cursive;
+	}
+
+	#footer a:hover {color: yellow;}
+
+	#footer > p {
+	    font-size: 0.9rem;
+	    line-height: 20px;
+	    margin-top: 10px;
+	}
